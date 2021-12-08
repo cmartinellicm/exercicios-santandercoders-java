@@ -9,9 +9,9 @@ public class CelsiusToFarenheitConversion {
         Scanner scan = new Scanner(System.in);
 
         System.out.print("Type temperature in Celcius: ");
-        float chosenTemperature = scan.nextFloat();
+        float temperatureInCelcius = scan.nextFloat();
 
-        System.out.printf("That is equivalent to %.2f F", convertToFarenheit(chosenTemperature));
+        System.out.printf("%.2f ºC is equivalent to %.2f F", temperatureInCelcius, convertToFarenheit(temperatureInCelcius));
     }
 
     public static float convertToFarenheit(float temperatureInCelcius) {
