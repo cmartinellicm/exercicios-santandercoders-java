@@ -14,15 +14,22 @@ public class OddEvenSeparator {
             numbers[i] = scan.nextInt();
         }
 
-        System.out.printf("%nThe odd numbers are: ");
+        showOddNumbers(numbers);
+        showEvenNumbers(numbers);
+    }
+
+    private static void showEvenNumbers(int[] numbers) {
+        System.out.printf("%nThe even numbers are: ");
 
         for (int number : numbers) {
             if (number % 2 == 0) {
                 System.out.printf("%d ", number);
             }
         }
+    }
 
-        System.out.printf("%nThe even numbers are: ");
+    private static void showOddNumbers(int[] numbers) {
+        System.out.printf("%nThe odd numbers are: ");
 
         for (int number : numbers) {
             if (number % 2 != 0) {
