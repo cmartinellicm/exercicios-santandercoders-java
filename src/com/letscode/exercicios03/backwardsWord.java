@@ -16,13 +16,6 @@ public class backwardsWord {
         showWordFromArray(backwardsWordArray);
     }
 
-    private static void showWordFromArray(char[] backwardsWordArray) {
-        System.out.print("Your word backwards is: ");
-        for (char letter : backwardsWordArray) {
-            System.out.print(letter);
-        }
-    }
-
     private static char[] reverseWord(char[] originalWordArray) {
         int wordLength = originalWordArray.length;
         char[] backwardsWordArray = new char[wordLength];
@@ -32,4 +25,13 @@ public class backwardsWord {
         }
         return backwardsWordArray;
     }
+
+    private static void showWordFromArray(char[] backwardsWordArray) {
+        System.out.print("Your word backwards is: ");
+        for (char letter : backwardsWordArray) {
+            System.out.print(letter);
+        }
+    }
+
+
 }
